@@ -24,7 +24,8 @@ while (choice == "y") or (choice == "Y"):
     if random_num >= 1:
         for random_num in reversed(range(1,random_num+1)):
             print(random_num)
-        
+    elif random_num == 0:
+        print("Some Nonsense")
 
 
 
