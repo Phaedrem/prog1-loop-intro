@@ -1,5 +1,7 @@
 # #################
-# put your comment header here
+# Name: Darren Bowers
+# Coding 04
+# Purpose: Program to generate a random number and allow loop on user response.
 # #################
 
 # this brings in the random number generator library 
