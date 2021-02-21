@@ -17,7 +17,7 @@ MAX = 10
 choice = "y"
 
 # this begins the loop
-while choice == "y":
+while (choice == "y") or (choice == "Y"):
     # generates a random number -10 to 10 inclusive
     random_num = random.randint(MIN,MAX)
     print("Random Number: ", random_num)
