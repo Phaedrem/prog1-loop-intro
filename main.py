@@ -21,9 +21,10 @@ while (choice == "y") or (choice == "Y"):
     # generates a random number -10 to 10 inclusive
     random_num = random.randint(MIN,MAX)
     print("Random Number: ", random_num)
-
-    # write your code here to complete the patterns
-    # as shown in the instructions
+    if random_num >= 1:
+        for random_num in reversed(range(1,random_num+1)):
+            print(random_num)
+        
 
 
 
