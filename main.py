@@ -26,7 +26,9 @@ while (choice == "y") or (choice == "Y"):
             print(random_num)
     elif random_num == 0:
         print("Some Nonsense")
-
+    elif random_num <= -1:
+        for random_num in range(random_num,0):
+            print(random_num)
 
 
 
