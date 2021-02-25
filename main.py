@@ -21,19 +21,19 @@ while (choice == "y") or (choice == "Y"):
     # generates a random number -10 to 10 inclusive
     random_num = random.randint(MIN,MAX)
     print("Random Number: ", random_num)
-    if random_num >= 1:
+    if random_num > 0:
         for random_num in range(random_num,0,-1):
             for col in range(random_num):
                 print('*', end='')
             print()
-    elif random_num == 0:
-        print("Some Nonsense")
-    elif random_num <= -1:
+    elif random_num < 0:
         for random_num in range(0,random_num,-1):
             for col in range(-random_num+1):
                 print('*', end='')
             print()
-
+    else:
+        pass
+            
 
 
 
