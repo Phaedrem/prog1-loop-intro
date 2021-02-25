@@ -22,15 +22,15 @@ while (choice == "y") or (choice == "Y"):
     random_num = random.randint(MIN,MAX)
     print("Random Number: ", random_num)
     if random_num >= 1:
-        for random_num in reversed(range(0,random_num)):
-            for col in range(random_num+1):
+        for random_num in range(random_num,0,-1):
+            for col in range(random_num):
                 print('*', end='')
             print()
     elif random_num == 0:
         print("Some Nonsense")
     elif random_num <= -1:
-        for random_num in reversed(range(random_num,0)):
-            for col in range(-random_num):
+        for random_num in range(0,random_num,-1):
+            for col in range(-random_num+1):
                 print('*', end='')
             print()
 
