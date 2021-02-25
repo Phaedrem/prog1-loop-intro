@@ -29,8 +29,10 @@ while (choice == "y") or (choice == "Y"):
     elif random_num == 0:
         print("Some Nonsense")
     elif random_num <= -1:
-        for random_num in range(random_num,0):
-            print(random_num)
+        for random_num in reversed(range(random_num,0)):
+            for col in range(-random_num):
+                print('*', end='')
+            print()
 
 
 
