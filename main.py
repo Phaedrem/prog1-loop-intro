@@ -32,11 +32,13 @@ while (choice == "y") or (choice == "Y"):
                 print('*', end='')
             print()
     else:
-        pass
-            
-
-
-
+        for row in range(MAX):
+            for col in range(MAX):
+                if col == row:
+                    print(' ', end='')
+                else:
+                    print('*', end='')
+            print()
 
 
 
